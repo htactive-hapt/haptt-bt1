@@ -1,0 +1,46 @@
+@media only screen and (min-width: 1024px) {
+    #container-content {
+        box-shadow: 4px 4px 0 0 rgba(72, 72, 72, 1);
+        background-color: white;
+        border-radius: 25px;
+        border: 1px solid black;
+        position: absolute;
+        display: inline-block;
+        left: 25%;
+        right: 25%;
+        padding: 2%;
+        top: 10%;
+        bottom: 10%;
+    }
+    .imagesan {
+        width: 14%;
+        float: left;
+    }
+    h2.shadow {
+        color: #E79F1A;
+        font-size: 30pt;
+        margin: 2%;
+        text-shadow: 5px 2px 4px grey;
+        font-weight: bold;
+    }
+    h2.shadow {
+        color: #E79F1A;
+        font-size: 30pt;
+        margin: 2%;
+        text-shadow: 5px 2px 4px grey;
+        font-weight: bold;
+    }
+    #container-content {
+        box-shadow: 4px 4px 0 0 rgba(72, 72, 72, 1);
+        background-color: white;
+        border-radius: 25px;
+        border: 1px solid black;
+        position: absolute;
+        display: inline-block;
+        left: 25%;
+        padding: 2%;
+    }
+    .imagesan {
+        display: inline;
+    }
+}

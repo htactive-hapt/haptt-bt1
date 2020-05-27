@@ -1,0 +1,75 @@
+#background-gradient {
+    display: flex;
+    flex-wrap: nowrap;
+    position: static;
+    height: 836px;
+    background: linear-gradient(to bottom, white, rgb(238, 209, 106));
+}
+
+#container {
+    top: 3%;
+}
+
+#container-content {
+    box-shadow: 4px 4px 0 0 rgba(72, 72, 72, 1);
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+    position: absolute;
+    display: inline-block;
+    left: 25%;
+    padding: 2%;
+}
+
+.imagesan {
+    width: 14%;
+    float: left;
+}
+
+h2.shadow {
+    color: #E79F1A;
+    font-size: 30pt;
+    margin: 2%;
+    text-shadow: 5px 2px 4px grey;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.body-content {
+    float: left;
+}
+
+a.text-gray {
+    color: darkgrey;
+}
+
+a.text-red {
+    color: darkred;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:link {
+    color: pink;
+}
+
+a:active {
+    color: blue;
+}
+
+hr.hr-line {
+    border-top: 2px solid orange;
+}
+
+.footer-san {
+    float: right;
+}
+
+strong {
+    font-style: italic;
+}
