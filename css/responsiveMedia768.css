@@ -1,22 +1,26 @@
 @media only screen and (min-width: 768px) {
-    #container-content {
+    h2.shadow {
+        color: #E79F1A;
+        font-size: 20pt;
+        text-shadow: unset;
+        font-weight: bold;
+    }
+    #container {
         box-shadow: 4px 4px 0 0 rgba(72, 72, 72, 1);
         background-color: white;
         border-radius: 25px;
         border: 1px solid black;
         position: absolute;
         display: inline-block;
-        left: 25%;
-        right: 25%;
+        top: 5%;
+        left: 15%;
+        right: 15%;
+        bottom: 5%;
     }
-    .imagesan {
+    .image-san {
         display: block;
-    }
-    h2.shadow {
-        color: #E79F1A;
-        font-size: 30pt;
-        margin: 2%;
-        text-shadow: 5px 2px 4px grey;
-        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
     }
 }
