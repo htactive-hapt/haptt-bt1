@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
     h2.shadow {
         color: #E79F1A;
-        font-size: 20pt;
+        font-size: 15pt;
         text-shadow: unset;
         font-weight: bold;
     }
@@ -13,14 +13,52 @@
         position: absolute;
         display: inline-block;
         top: 5%;
-        left: 15%;
-        right: 15%;
-        bottom: 5%;
+        left: 13%;
+        right: 13%;
+        bottom: 2%;
     }
     .image-san {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 20%;
+        width: 14%;
+    }
+    div#content {
+        font-size: 10pt;
+    }
+    .image-caption,
+    .image-text {
+        left: 2%;
+    }
+    .image-caption {
+        background-color: rgb(236, 64, 22);
+        color: #dbd9b1;
+        font-size: 13pt;
+        top: 2%;
+        position: absolute;
+        animation: fade-out 3s infinite;
+        animation-delay: 2s;
+        height: max-content;
+    }
+    .image-text {
+        background-image: white;
+        color: white;
+        font-size: 12pt;
+        top: 22%;
+        width: max-content;
+        position: absolute;
+        animation: fade-out 3s infinite;
+        animation-delay: 2s;
+    }
+    ul.image-text {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+    }
+    ul.image-text li:before {
+        content: '✓';
+        color: white;
+        background-color: darkgrey;
     }
 }

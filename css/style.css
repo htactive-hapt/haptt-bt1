@@ -10,18 +10,18 @@ html {
     border: 1px solid black;
     position: absolute;
     display: inline-block;
-    left: 25%;
+    left: 30%;
     padding: 2%;
 }
 
 .imagesan {
-    width: 10%;
+    width: 14%;
     float: left;
 }
 
 h2.shadow {
     color: #E79F1A;
-    font-size: 30pt;
+    font-size: 25pt;
     margin: 2%;
     text-shadow: 5px 2px 4px grey;
     font-weight: bold;
@@ -68,15 +68,33 @@ strong {
 }
 
 
-/* slide css */
+/* animation */
+
+.loading {
+    width: 100%;
+    height: 5px;
+    background: orangered;
+    animation: loading 5s infinite;
+}
+
+@keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* slider css */
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Verdana, sans-serif;
-    margin: 0;
+    font-family: sans-serif, sans-serif;
 }
 
 .mySlides {
@@ -87,12 +105,18 @@ img {
     vertical-align: middle;
 }
 
-.slider-show {
-    max-width: 1000px;
-    max-height: 200px;
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 100%;
     position: relative;
     margin: auto;
+    padding: auto;
 }
+
+
+/* Caption text */
 
 .text {
     color: #f2f2f2;
@@ -113,40 +137,147 @@ img {
 
 @-webkit-keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: .4
     }
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: .4
     }
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
+
+
+/* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
     .text {
-        font-size: 11px;
+        font-size: 11px
     }
 }
 
-#Loading {
-    width: 100%;
-    height: 4px;
-    background: red;
-    animation: loading 10s infinite;
+
+/* test slide fade out */
+
+.image-caption {
+    color: #f2f2f2;
+    position: absolute;
+    top: 0;
 }
 
-@keyframes loading {
+@keyframes fade-out {
     from {
-        width: 0%;
+        left: 2%;
     }
     to {
-        width: 100%;
+        left: 5%;
     }
+}
+
+.image-caption,
+.image-text {
+    left: 2%;
+}
+
+.image-caption {
+    background-color: rgb(236, 64, 22);
+    color: #dbd9b1;
+    font-size: 20pt;
+    top: 2%;
+    position: absolute;
+    animation: fade-out 3s infinite;
+    animation-delay: 2s;
+    height: max-content;
+}
+
+.image-text {
+    background-image: white;
+    color: white;
+    font-size: 15pt;
+    top: 19%;
+    width: max-content;
+    position: absolute;
+    animation: fade-out 3s infinite;
+    animation-delay: 2s;
+}
+
+ul.image-text {
+    background-color: gray;
+}
+
+ul.image-text,
+ul.menu-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.image-text li:before {
+    content: '✓';
+    color: white;
+    background-color: darkgrey;
+}
+
+.menu-bar {
+    overflow: hidden;
+}
+
+.menu-bar a {
+    float: left;
+    width: 15%;
+    color: orangered;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* responsive menu-bar */
+
+.icon {
+    float: right;
+}
+
+
+/* css contact form */
+
+#contact-information,
+#contact-information-response {
+    float: left;
+    color: #666;
+}
+
+#tilte-contact {
+    color: black;
+}
+
+div>input {
+    height: 30px;
+}
+
+div>input,
+div>textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.submit {
+    background-color: orangered;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    float: right;
+}
+
+#contact-information-response {
+    display: none;
 }

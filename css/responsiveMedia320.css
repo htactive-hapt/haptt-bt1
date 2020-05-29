@@ -23,4 +23,55 @@
         margin-right: auto;
         width: 20%;
     }
+    .image-caption {
+        color: #f2f2f2;
+        position: absolute;
+        top: 0;
+    }
+    @keyframes fade-out {
+        from {
+            left: 2%;
+        }
+        to {
+            left: 5%;
+        }
+    }
+    div#content {
+        font-size: 10pt;
+    }
+    .image-caption,
+    .image-text {
+        left: 2%;
+    }
+    .image-caption {
+        background-color: rgb(236, 64, 22);
+        color: #dbd9b1;
+        font-size: 10pt;
+        top: 2%;
+        position: absolute;
+        animation: fade-out 3s infinite;
+        animation-delay: 2s;
+        height: max-content;
+    }
+    .image-text {
+        background-image: white;
+        color: white;
+        font-size: 8pt;
+        top: 19%;
+        width: max-content;
+        position: absolute;
+        animation: fade-out 3s infinite;
+        animation-delay: 2s;
+    }
+    ul.image-text {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+    }
+    ul.image-text li:before {
+        content: '✓';
+        color: white;
+        background-color: darkgrey;
+    }
 }
