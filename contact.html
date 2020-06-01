@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-    <title>HaPTT - Lab 3 - Thuc Hanh</title>
+    <title>Contact </title>
 
     <!-- icon -->
     <link rel="icon" href="images/mypic.jpg" type="image/jpg" sizes="16x16">
@@ -122,8 +122,9 @@
                         <textarea name="message" id="inputInformation" cols="30" rows="5" placeholder="Please let us know your idea" required></textarea>
                     </div>
                 </div>
+                <button class="submit" onClick="checkInformation()">Submit</button>
             </form>
-            <button class="submit" onClick="checkInformation()">Submit</button>
+
         </div>
         <div id="contact-information-response">
             <div>
@@ -160,13 +161,9 @@
 
     </div>
 
-    </div>
     <script>
         function checkInformation() {
             var responseInformationNodeList = document.querySelectorAll('.information-response');
-            // if (responseInformationNodeList) {
-            //     alert("Please enter the information")
-            // }
             var inputInformation = document.querySelectorAll("#inputInformation");
             for (i = 0; i < responseInformationNodeList.length; i++) {
                 responseInformationNodeList[i].setAttribute("value", inputInformation[i].value);

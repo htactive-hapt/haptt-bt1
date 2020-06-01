@@ -4,11 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>About me</title>
+
+    <!-- icon -->
+    <link rel="icon" href="images/mypic.jpg" type="image/jpg" sizes="16x16">
+
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media='screen and (min-width: 320px)' href="css/responsiveMedia320.css">
+    <link rel="stylesheet" type="text/css" media='screen and (min-width: 375px)' href="css/responsiveMedia375.css">
+    <link rel="stylesheet" type="text/css" media='screen and (min-width: 425px)' href="css/responsiveMedia425.css">
+    <link rel="stylesheet" type="text/css" media='screen and (min-width: 768px)' href="css/responsiveMedia768.css">
+    <link rel="stylesheet" type="text/css" media='screen and (min-width: 1024px)' href="css/responsiveMedia1024.css">
+    <link rel="stylesheet" type="text/css" media='screen and (min-width: 1440px)' href="css/responsiveMedia1440.css">
 </head>
 
-<body>
 
+<body>
+    <div id="container">
+        <div id="header-top">
+            <div id="header-image">
+                <img class="image-san" src="images/san.PNG" alt="San Joaquin Valley Town Hall">
+            </div>
+            <div id="header-name">
+                <h2 class="shadow text-center">San Joaquin Valley Town Hall</h2>
+                <h4 class="text-center"><strong>Bringing cutting-edge speakers to the valley</strong></h4>
+            </div>
+            <div class="menu-bar" id="hidden-menu-responsive">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="image-caption">We Provide All You Need</div>
+                    <div class="image-text">
+                        <ul class="image-text">
+                            <li>Web Application</li>
+                            <li>Window Application</li>
+                            <li>Mobile Application</li>
+                            <li>Game</li>
+                        </ul>
+                    </div>
+                    <img src="images/1046.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="image-caption">HT Active</div>
+                    <div class="image-text">
+                        <ul class="image-text">
+                            <li>Provide best services</li>
+                            <li>New technologies</li>
+                            <li>Cross browser</li>
+                            <li>Brilliant team</li>
+                        </ul>
+                    </div>
+                    <img src="images/1045.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="image-caption">Satisfation Is What You Need</div>
+                    <div class="image-text">
+                        <ul class="image-text">
+                            <li>Clean and unique design</li>
+                            <li>After sale support</li>
+                            <li>Best quanlity</li>
+                            <li>Suppoort 24/7</li>
+                        </ul>
+                    </div>
+                    <img src="images/1048.jpg" style="width:100%">
+                </div>
+
+            </div>
+            <div class="loading"></div>
+        </div>
+        <div id="contact-information">
+            <div>
+                <h2 id="tilte-contact">About me</h2>
+            </div>
+            <div id="my-profile">
+                <div id="my-picture">
+                    <img class="my-img" src="images/mypic.jpg" alt="Chi Pham Thi Thu Ha" width="100%">
+                    <h2 class="my-name" style="color: black;">Pham Thi Thu Ha</h2>
+                </div>
+                <div id="my-infor">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Full name: </td>
+                                <td>Phạm Thị Thu Hà</td>
+                            </tr>
+                            <tr>
+                                <td>DoB: </td>
+                                <td>07/06/1999</td>
+                            </tr>
+                            <tr>
+                                <td>Job: </td>
+                                <td>Student</td>
+                            </tr>
+                            <tr>
+                                <td>Address: </td>
+                                <td>101B Le Huu Trac - Danang</td>
+                            </tr>
+                            <tr>
+                                <td>Homeland: </td>
+                                <td>Le Thuy - Quang Binh</td>
+                            </tr>
+                            <tr>
+                                <td>Email: </td>
+                                <td>thuhaphamdlb@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>ID card: </td>
+                                <td>044199001814</td>
+                            </tr>
+                            <tr>
+                                <td>Gender: </td>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <td>Phone: </td>
+                                <td>0866487699</td>
+                            </tr>
+                            <tr>
+                                <td>National: </td>
+                                <td>Vietnam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

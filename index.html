@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" media='screen and (min-width: 768px)' href="css/responsiveMedia768.css">
     <link rel="stylesheet" type="text/css" media='screen and (min-width: 1024px)' href="css/responsiveMedia1024.css">
     <link rel="stylesheet" type="text/css" media='screen and (min-width: 1440px)' href="css/responsiveMedia1440.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -30,13 +33,16 @@
                 <h2 class="shadow text-center">San Joaquin Valley Town Hall</h2>
                 <h4 class="text-center"><strong>Bringing cutting-edge speakers to the valley</strong></h4>
             </div>
-            <div class="menu-bar" id="hidden-menu-responsive">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+
+            <div class="menu-bar" id="myMenubar">
+                <a href="index.html" class="active">Home</a>
                 <a href="contact.html">Contact</a>
-                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i></a> -->
+                <a href="about.html">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="menuBarResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
+
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="image-caption">We Provide All You Need</div>

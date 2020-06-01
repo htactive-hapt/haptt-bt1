@@ -16,7 +16,7 @@ function showSlides() {
 }
 
 function menuBarResponsive() {
-    var x = document.getElementById("hidden-menu-responsive");
+    var x = document.getElementById("myMenubar");
     if (x.className === "menu-bar") {
         x.className += " responsive";
     } else {

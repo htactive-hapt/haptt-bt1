@@ -57,4 +57,24 @@
         color: white;
         background-color: darkgrey;
     }
+    /* about - my information */
+    .my-name {
+        text-align: center;
+    }
+    #tilte-contact {
+        text-align: left;
+    }
+    #my-picture {
+        width: 40%;
+        box-sizing: content-box;
+    }
+    .my-img {
+        width: 95%;
+        float: left;
+    }
+    table {
+        float: left;
+        height: 100%;
+        border-spacing: 0 8px;
+    }
 }
